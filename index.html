@@ -6,17 +6,22 @@
     <title>GO FCK DA WORLD</title>
     <style>
         body {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: url('background.jpg') no-repeat center center/cover;
-            overflow: hidden;
-        }
-        audio {
-            display: none;
-        }
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('background.gif') no-repeat center center;
+    background-size: cover; /* Обеспечивает, что картинка займет весь экран */
+    overflow: hidden;
+}
+        @media (max-width: 768px) {
+    body {
+        background-size: contain; /* Подгоняет фон под экран на маленьких устройствах */
+    }
+}
+
+
     </style>
 </head>
 <body>
